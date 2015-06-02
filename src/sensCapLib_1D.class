@@ -1,0 +1,24 @@
+// sensCapLib_1D
+//
+// by antoine.delhomme@espci.fr for Langevinium
+//
+
+import processing.core.*;
+
+public class sensCapLib_1D {
+  PApplet parent;
+
+  public sensCapLib_1D(PApplet parent) {
+    // sensCapLib_1D Constructor of the class
+    //
+    this.parent = parent;
+    parent.registerMethod("dispose", this);
+  }
+
+  public void dispose() {
+    // Anything in here will be called automatically when 
+    // the parent sketch shuts down. For instance, this might
+    // shut down a thread used by this library.
+    //
+  }
+}
